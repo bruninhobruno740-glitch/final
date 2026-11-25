@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .fot {
+            background-color: whitesmoke;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .galeria {
+            display: grid;
+            gap: 1rem;
+            background-color: red;
+        }
+        @media (min-width: 768px) {
+            .galeria {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        h1 { frent-siz}
+    </style>
+</head>
+
+<body>
+<h1> TESTANDO</h1>
+    <section class="galeria">
+        <section class="fot">a</section>
+        <section class="fot">b</section>
+        <section class="fot">c</section>
+        <section class="fot">d</section>
+
+
+
+
+    </section>
+
+
+
+</body>
+
+</html>
