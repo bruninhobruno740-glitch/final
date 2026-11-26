@@ -107,55 +107,7 @@
 
     <main class="container py-4">
 
-        <!-- Serviços e formulário -->
-        <section class="card shadow-sm p-4 mb-4">
-            <h2>Serviços</h2>
-
-            <form action="/inscricao" method="post">
-
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Busque:</label>
-                    <div class="input-group">
-                        <input id="nome" name="nome" type="text"
-                            class="form-control" placeholder="Buscar no cardápio">
-                        <button class="btn btn-cafe" type="button">
-                            Procurar no cardápio
-                        </button>
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="agendamento" class="form-label">
-                        Agendar evento:
-                    </label>
-                    <input type="date" id="agendamento"
-                        class="form-control">
-                </div>
-
-                <h2>Seus dados:</h2>
-
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input id="email" name="email" type="email"
-                            class="form-control" required>
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label for="idade" class="form-label">Idade</label>
-                        <input id="idade" name="idade" type="number"
-                            min="16" max="100" class="form-control">
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-success">
-                    Enviar
-                </button>
-
-            </form>
-        </section>
-
-        <!-- Início -->
+        
         <section id="inicio" class="text-center mb-5">
             <h2>Bem-vindo!</h2>
             <p>Venha aproveitar cafés deliciosos em um ambiente aconchegante.</p>
@@ -241,7 +193,7 @@
             </div>
         </section>
 
-        <!-- Horários -->
+        
         <section id="horarios" class="mb-5">
             <h2 class="text-center mb-3">Horários de atendimento</h2>
 
@@ -265,9 +217,58 @@
                     </tbody>
                 </table>
             </div>
+        
+        <section class="card shadow-sm p-4 mb-4">
+            <h2>Não encontrou seu prato?</h2>
+
+            <form action="/inscricao" method="post">
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Busque:</label>
+                    <div class="input-group">
+                        <input id="nome" name="nome" type="text"
+                            class="form-control" placeholder="Buscar no cardápio">
+                        <button class="btn btn-cafe" type="button">
+                            Procurar no cardápio
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </section>
+
+ <section class="card shadow-sm p-4 mb-4">
+                <div class="mb-3">
+                    <label for="agendamento" class="form-label">
+                        <h2>Agendar evento:</h2>
+                    </label>
+                    <input type="date" id="agendamento"
+                        class="form-control">
+                </div>
+
+                <h2>Seus dados:</h2>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input id="email" name="email" type="email"
+                            class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="idade" class="form-label">Idade</label>
+                        <input id="idade" name="idade" type="number"
+                            min="16" max="100" class="form-control">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Enviar
+                </button>
+
+            </form>
         </section>
 
-        <!-- Vídeos -->
+
         <section class="mb-5">
             <h2 class="text-center mb-4">Conheça nossos cafés</h2>
 
@@ -292,22 +293,36 @@
         <!-- Promoções -->
         <section id="promocoes" class="card shadow-sm p-4 mb-5">
             <h2>Promoções</h2>
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item">Pão francês R$ 0,40/un</li>
+            <li class="list-group-item">Pão doce R$ 1,02/un</li>
+            <li class="list-group-item">Rosca de polvilho R$ 5,00</li>
+            <li class="list-group-item">Pão de queijo R$ 1,50/un</li>
+            <li class="list-group-item">Sonho de creme R$ 3,50/un</li>
+            <li class="list-group-item">Cueca virada R$ 2,00/un</li>
+            <li class="list-group-item">Enroladinho de salsicha R$ 3,50/un</li>
+            <li class="list-group-item">Pastel assado R$ 4,00/un</li>
+        </ul>
+    </div>
 
-            <ul class="list-group">
-                <li class="list-group-item">Pão trigo R$ 0,40/un</li>
-                <li class="list-group-item">Pão doce R$ 1,02/un</li>
-                <li class="list-group-item">Rosca polvilho R$ 5,00</li>
-            </ul>
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item">Pão de leite R$ 1,00/un</li>
+            <li class="list-group-item">Rosquinha de coco R$ 6,00</li>
+            <li class="list-group-item">Biscoito de polvilho R$ 8,00/kg</li>
+            <li class="list-group-item">Pão caseiro R$ 8,00/un</li>
+            <li class="list-group-item">Bolo simples R$ 12,00/un</li>
+            <li class="list-group-item">Cuca recheada R$ 15,00/un</li>
+            <li class="list-group-item">Mini pizza R$ 4,50/un</li>
+             <li class="list-group-item">Cachorro quente R$ 15,00/un</li>
+        </ul>
+    </div>
+</div>
 
             <div class="mt-4">
-                <h5>Busca</h5>
-                <p>Encontre nossos produtos.</p>
-
-                <h5>Acessibilidade</h5>
-                <p>Nosso site busca atender todos os clientes.</p>
-
-                <h5>Manutenção</h5>
-                <p>Estamos sempre melhorando nosso espaço.</p>
+               
             </div>
         </section>
 
@@ -328,7 +343,7 @@
 
             <div class="mb-3">
                 <label for="Funcionarios" class="form-label">
-                    Funcionários
+                    <strong>Funcionarios:</strong>
                 </label>
 
                 <select id="Funcionarios" name="Funcionarios"
